@@ -2,6 +2,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["app/presentation/components/*"],
+      "@uses-cases/*": ["app/core/uses-cases/*"],
+      "@interfaces/*": ["app/interfaces/*"],
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
