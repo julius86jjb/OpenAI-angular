@@ -11,14 +11,11 @@
 
       @for (message of messages(); track $index) {
         @if(message.isGpt) {
-          <app-chat-messages [text]="message.text" />
+          <app-gpt-message-orthography [text]="message.text" [errors]="message.info!.errors" [userScore]="message.info!.userScore" />
         } @else {
           <app-my-message [text]="message.text" />
         }
       }
-
-
-
 
       @if (isLoading()) {
       <app-typing-loader />
@@ -28,9 +25,11 @@
 
   </div>
 
-  <!-- <app-text-message-box-file placeholder="Write here what you want" (onMessage)="handleMessageWithFile($event)" /> -->
-  <app-text-message-box-select placeholder="Write here what you want"
-    [options]="[{id: '1', text: '1'}, {id: '2', text: '2'}]" (onMessage)="handleMessageWithSelect($event)" />
-  <!-- <app-text-messages-box placeholder="Write here what you want" (onMessage)="handleMessage($event)" /> -->
   <!--Messages box-->
+
+  <!-- <app-text-message-box-file placeholder="Write here what you want" (onMessage)="handleMessageWithFile($event)" /> -->
+  <!-- <app-text-message-box-select placeholder="Write here what you want"
+    [options]="[{id: '1', text: '1'}, {id: '2', text: '2'}]" (onMessage)="handleMessageWithSelect($event)" /> -->
+  <app-text-messages-box placeholder="Write here what you want" (onMessage)="handleMessage($event)" [disableCorrections]="true" />
+
 </div>
