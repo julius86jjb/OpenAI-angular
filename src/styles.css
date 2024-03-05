@@ -39,6 +39,14 @@ em {
   @apply bg-indigo-500 text-white font-bold py-2 px-4 rounded-xl opacity-50 cursor-not-allowed;
 }
 
+.btn-danger {
+  @apply bg-red-500 text-white font-bold py-2 px-4 rounded-xl hover:bg-red-700 transition-all duration-200 ease-in-out;
+}
+
+.btn-danger:disabled {
+  @apply bg-red-500 text-white font-bold py-2 px-4 rounded-xl opacity-50 cursor-not-allowed;
+}
+
 .chat-container {
   @apply flex flex-col flex-auto flex-shrink-0 rounded-2xl bg-white bg-opacity-5 h-[calc(100vh-90px)] p-4 w-[calc(100vw-500px)];
 }

@@ -1,8 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 
-import { ChatMessagesComponent, MyMessageComponent, TextMessagesBoxComponent,
-  TextMessageBoxFileComponent, TextMessageBoxSelectComponent, TypingLoaderComponent,
+import { ChatMessagesComponent, MyMessageComponent, TextMessagesBoxComponent, TypingLoaderComponent,
   GptMessageOrthographyComponent } from '@components/index';
 
 import { OpenAiService } from '../../services/openai.service';
@@ -18,8 +17,6 @@ import { OrthographyUseCaseResponse, Message } from '@interfaces/index';
     MyMessageComponent,
     TypingLoaderComponent,
     TextMessagesBoxComponent,
-    TextMessageBoxFileComponent,
-    TextMessageBoxSelectComponent,
     GptMessageOrthographyComponent
   ],
   templateUrl: './orthographyPage.component.html',

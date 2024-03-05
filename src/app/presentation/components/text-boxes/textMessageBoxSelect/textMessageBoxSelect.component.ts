@@ -46,6 +46,6 @@ export class TextMessageBoxSelectComponent {
     console.log({prompt, selectedOption})
 
     this.onMessage.emit({prompt: prompt!, selectedOption: selectedOption!});
-    this.form.reset();
+    this.form.controls.prompt.reset();
   }
  }

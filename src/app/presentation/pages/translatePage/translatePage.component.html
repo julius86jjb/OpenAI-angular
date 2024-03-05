@@ -1,1 +1,32 @@
-<p>translatePage works!</p>,
+<div class="chat-container">
+    <div class="chat-messages" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+      <div class="grid gap-y-2">
+
+
+        <!-- Chat Messages -->
+        <app-chat-messages
+          text="Hello! I'm here to help you translate text. Don't forget to choose the language you want me to translate!"        />
+
+
+        @for (message of messages(); track $index) {
+          @if(message.isGpt) {
+            <app-chat-messages [text]="message.text" />
+          } @else {
+            <app-my-message [text]="message.text" />
+          }
+        }
+
+
+
+
+        @if (isLoading()) {
+        <app-typing-loader />
+        }
+
+      </div>
+
+    </div>
+
+    <app-text-message-box-select
+      [options]="languages()" placeholder="Enter the text you want to translate" (onMessage)="handleMessageWithSelect($event)" />
+  </div>
