@@ -1,3 +1,4 @@
+
 export { TranslateResponse } from './translate.response';
 export { ProsConsResponse } from './pros-cons.response';
 export { OrthographyUseCaseResponse } from './orthography-use-case.response';
