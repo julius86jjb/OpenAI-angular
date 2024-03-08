@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { OrthographyUseCaseResponse } from '@interfaces/orthography-use-case.response';
-import { orthographyUseCase, prosConsStreamUseCase, prosConsUseCase, translateUseCase, textToAudioUseCase } from 'app/core/use-cases/index';
+import { orthographyUseCase, prosConsStreamUseCase, prosConsUseCase, translateUseCase, textToAudioUseCase, audioToTextUseCase } from 'app/core/use-cases/index';
 import { Observable, from } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
@@ -27,6 +27,11 @@ export class OpenAiService {
 
   textToAudio(prompt: string, voice: string) {
     return from(textToAudioUseCase(prompt, voice));
+  }
+
+
+  audioToText(file: File, prompt?: string) {
+    return from(audioToTextUseCase(file, prompt));
   }
 
 }

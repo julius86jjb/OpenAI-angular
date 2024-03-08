@@ -12,7 +12,7 @@ export const textToAudioUseCase = async (prompt: string, voice: string) => {
       body: JSON.stringify({ prompt, voice })
     });
 
-    if (!resp.ok) throw new Error('Correction failed');
+    if (!resp.ok) throw new Error('Text to audio failed');
 
     const audioFile = await resp.blob(); // binario
     const audioUrl = URL.createObjectURL(audioFile)

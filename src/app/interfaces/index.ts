@@ -1,7 +1,7 @@
+export * from './audio-to-text.response';
 
-export { TranslateResponse } from './translate.response';
-export { ProsConsResponse } from './pros-cons.response';
-export { OrthographyUseCaseResponse } from './orthography-use-case.response';
-export { OrthographyResponse } from './orthography.response';
-export { Message } from './message.interface';
-
+export * from './translate.response';
+export * from './pros-cons.response';
+export * from './orthography-use-case.response';
+export * from './orthography.response';
+export * from './message.interface';

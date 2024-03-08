@@ -1,3 +1,4 @@
+export { TextMessageEventFile } from '@components/text-boxes/textMessageBoxFile/textMessageBoxFile.component';
 export { ChatMessagesComponent } from "./chat-bubbles/chatMessages/chatMessages.component";
 export { GptMessageOrthographyComponent } from "./chat-bubbles/gptMessageOrthography/gptMessageOrthography.component";
 export { MyMessageComponent } from "./chat-bubbles/myMessage/myMessage.component";
