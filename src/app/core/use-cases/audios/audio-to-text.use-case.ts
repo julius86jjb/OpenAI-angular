@@ -16,14 +16,14 @@ export const audioToTextUseCase = async (audioFile: File, prompt?: string) => {
       body: formData
     })
 
-    if (!resp.ok) if (!resp.ok) throw new Error('Audio to text failed');
+    if (!resp.ok) throw new Error('Audio to text failed');
 
     const data = await resp.json() as AudioToTextResponse
 
     return data;
 
   } catch (error) {
-    console.log()
+    console.log(error);
     return null;
   }
 

@@ -5,3 +5,4 @@ export * from './pros-cons.response';
 export * from './orthography-use-case.response';
 export * from './orthography.response';
 export * from './message.interface';
+export * from './question.response';

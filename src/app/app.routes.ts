@@ -14,8 +14,8 @@ export const routes: Routes = [
           ),
         data: {
           icon: 'fa-solid fa-spell-check',
-          title: 'Ortografía',
-          description: 'Corregir ortografía',
+          title: 'Orthography',
+          description: 'Check orthography',
         },
       },
       {
@@ -25,7 +25,7 @@ export const routes: Routes = [
         data: {
           icon: 'fa-solid fa-code-compare',
           title: 'Pros & Cons',
-          description: 'Comparar pros y contras',
+          description: 'Compare pros and cons',
         },
       },
       {
@@ -36,8 +36,8 @@ export const routes: Routes = [
           ),
         data: {
           icon: 'fa-solid fa-water',
-          title: 'Como stream',
-          description: 'Con stream de mensajes',
+          title: 'As stream',
+          description: 'With message stream',
         },
       },
       {
@@ -46,8 +46,8 @@ export const routes: Routes = [
           import('./presentation/pages/translatePage/translatePage.component'),
         data: {
           icon: 'fa-solid fa-language',
-          title: 'Traducir',
-          description: 'Textos a otros idiomas',
+          title: 'Translate',
+          description: 'Texts in other languages',
         },
       },
       {
@@ -58,8 +58,8 @@ export const routes: Routes = [
           ),
         data: {
           icon: 'fa-solid fa-podcast',
-          title: 'Texto a audio',
-          description: 'Convertir texto a audio',
+          title: 'Text to audio',
+          description: 'Convert text to audio',
         },
       },
       {
@@ -70,8 +70,8 @@ export const routes: Routes = [
           ),
         data: {
           icon: 'fa-solid fa-comment-dots',
-          title: 'Audio a texto',
-          description: 'Convertir audio a texto',
+          title: 'Audio to text',
+          description: 'Convert audio a texto',
         },
       },
       {
@@ -82,8 +82,8 @@ export const routes: Routes = [
           ),
         data: {
           icon: 'fa-solid fa-image',
-          title: 'Imágenes',
-          description: 'Generar imágenes',
+          title: 'Images',
+          description: 'Generate images',
         },
       },
       {
@@ -94,8 +94,8 @@ export const routes: Routes = [
           ),
         data: {
           icon: 'fa-solid fa-wand-magic',
-          title: 'Editar imagen',
-          description: 'Generación continua',
+          title: 'Edit image',
+          description: 'Continuous generation',
         },
       },
 
@@ -105,8 +105,8 @@ export const routes: Routes = [
           import('./presentation/pages/assistantPage/assistantPage.component'),
         data: {
           icon: 'fa-solid fa-user',
-          title: 'Asistente',
-          description: 'Información del asistente',
+          title: 'Assistant',
+          description: `Assistant's information`,
         },
       },
       {

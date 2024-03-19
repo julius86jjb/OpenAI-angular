@@ -1,3 +1,4 @@
+export { GptMessageEditableImageComponent } from './chat-bubbles/gptMessageEditableImage/gptMessageEditableImage.component';
 export { TextMessageEventFile } from '@components/text-boxes/textMessageBoxFile/textMessageBoxFile.component';
 export { ChatMessagesComponent } from "./chat-bubbles/chatMessages/chatMessages.component";
 export { GptMessageOrthographyComponent } from "./chat-bubbles/gptMessageOrthography/gptMessageOrthography.component";

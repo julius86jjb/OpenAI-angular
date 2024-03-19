@@ -38,7 +38,6 @@ export async function* prosConsStreamUseCase(prompt: string, abortSignal: AbortS
       text+= decodedChunk;
       yield text;
 
-      console.log(text);
 
     }
 

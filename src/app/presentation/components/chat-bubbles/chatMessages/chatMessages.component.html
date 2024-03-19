@@ -12,6 +12,15 @@
 
         <audio controls [src]="audioUrl" autoplay class="w-full"></audio>
       }
+      @if (imageInfo) {
+        @if (imageInfo.error){
+          <markdown>
+            {{ imageInfo.errorMessage }}
+          </markdown>
+        }@else{
+          <img controls [src]="imageInfo.url" [alt]="imageInfo.alt"  class="rounded-xl w-96 h-96 object-cover"/>
+        }
+      }
     </div>
   </div>
 </div>

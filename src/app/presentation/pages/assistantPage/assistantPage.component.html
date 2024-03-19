@@ -1,1 +1,40 @@
-<p>assistantPage works!</p>,
+<div class="chat-container">
+  <div class=" float-right mr-4">
+    <button class="btn-danger" (click)="reloadThread()">
+      <span class="mr-2">New Thread</span>
+    </button>
+  </div>
+    <div class="chat-messages">
+      <div class="grid gap-y-2">
+
+
+        <!-- Chat Messages -->
+        <app-chat-messages
+          text="Hi, I'm Sam, your Samsung Mexico virtual assistant. Based on the terms and conditions pdf you have provided me with, i can give you the information you need. How can I help you?"
+        />
+
+
+        @for (message of messages(); track $index) {
+          @if(message.isGpt) {
+            <app-chat-messages [text]="message.text" />
+          } @else {
+            <app-my-message [text]="message.text" />
+          }
+        }
+
+
+
+
+        @if (isLoading()) {
+        <app-typing-loader />
+        }
+
+      </div>
+
+    </div>
+
+    <!-- <app-text-message-box-file placeholder="Write here what you want" (onMessage)="handleMessageWithFile($event)" /> -->
+    <!-- <app-text-message-box-select placeholder="Write here what you want"
+      [options]="[{id: '1', text: '1'}, {id: '2', text: '2'}]" (onMessage)="handleMessageWithSelect($event)" /> -->
+    <app-text-messages-box placeholder="Write here what you want" (onMessage)="handleMessage($event)" />
+  </div>

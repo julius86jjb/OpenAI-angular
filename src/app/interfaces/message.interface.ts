@@ -1,3 +1,5 @@
+
+
 export interface Message {
   text: string;
   isGpt: boolean;
@@ -7,4 +9,11 @@ export interface Message {
     message: string;
   },
   audioUrl?: string;
+  imageInfo?: {
+    url: string;
+    alt: string;
+    error: boolean
+    errorMessage?: string
+  }
+
 }

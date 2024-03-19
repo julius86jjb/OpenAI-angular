@@ -60,7 +60,6 @@ export default class TranslatePageComponent {
 
     this.openAiService.translate(prompt, selectedOption)
       .subscribe((resp) => {
-        console.log(resp);
         this.isLoading.set(false);
         this.messages.update((prev: Message[]) => [
           ...prev,

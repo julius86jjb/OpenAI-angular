@@ -33,7 +33,6 @@ export default class ProsConsPageComponent {
 
     this.openAiService.prosConsDiscusser(prompt)
       .subscribe((resp) => {
-        console.log(resp);
         this.isLoading.set(false);
         this.messages.update((prev) => [
           ...prev,

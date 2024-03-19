@@ -52,7 +52,6 @@ export default class OrthographyPageComponent {
 
     this.openAiService.checkOrthography(prompt)
       .subscribe((resp: OrthographyUseCaseResponse) => {
-        console.log(resp);
         this.isLoading.set(false);
         this.messages.update((prev: Message[]) => [
           ...prev,
@@ -62,7 +61,6 @@ export default class OrthographyPageComponent {
             info: resp
           }
         ])
-        console.log(resp);
       })
   }
 }
