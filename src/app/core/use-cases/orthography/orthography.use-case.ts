@@ -3,7 +3,8 @@ import type { OrthographyResponse, OrthographyUseCaseResponse } from "@interface
 
 export const orthographyUseCase = async (prompt: string): Promise<OrthographyUseCaseResponse> => {
   try {
-
+    const url = `${environment.backendApi}/orthography-check`
+    console.log(url)
     const resp = await fetch(`${environment.backendApi}/orthography-check`, {
       method: 'POST',
       headers: {

@@ -1,5 +1,5 @@
 export const environment = {
 
-  backendApi: 'http://localhost:3000/gpt',
-  assistantApi: 'http://localhost:3000/sam-assistant',
+  backendApi: 'https://nest-openai-o8jo.onrender.com/gpt',
+  assistantApi: 'https://nest-openai-o8jo.onrender.com/sam-assistant',
 };
